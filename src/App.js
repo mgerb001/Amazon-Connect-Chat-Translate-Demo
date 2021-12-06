@@ -16,12 +16,7 @@ class App extends Component {
        render() {
               return (
                      <div className="App">
-                     <React.Fragmnet>
                         <Ccp />
-                     </React.Fragmnet>
-                     <React.Fragment>
-                     <appRegistry />
-                     </React.Fragment>
                      </div>
               );
        }
