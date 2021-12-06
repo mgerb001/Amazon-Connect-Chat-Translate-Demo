@@ -8,7 +8,6 @@ import 'semantic-ui-less/semantic.less';
 
 // Import components
 import Ccp from "./components/ccp";
-import appRegistry from "./components/app-registriy"
 
 Auth.configure(awsconfig);
 
