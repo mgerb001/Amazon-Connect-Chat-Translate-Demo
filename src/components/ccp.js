@@ -34,7 +34,7 @@ const Ccp = () => {
             controller.onMessage(messageData => {
                 if (messageData.chatDetails.participantId === messageData.data.ParticipantId) {
                     console.log(`CDEBUG ===> Agent ${messageData.data.DisplayName} Says`,
-                        messageData.data.Content)M
+                        messageData.data.Content)
                         console.log('MARGERBE FOOTPRINT ')
                 }
                 else {
