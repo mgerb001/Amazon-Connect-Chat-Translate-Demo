@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Auth from "@aws-amplify/auth";
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 import awsconfig from "./aws-exports";
@@ -15,12 +15,13 @@ Auth.configure(awsconfig);
 class App extends Component {
        render() {
               return (
-                     
                      <div className="App">
+                     <React.Fragmnet>
                         <Ccp />
-                     </div>
-                     <div className="App">
-                            <appRegistry />
+                     </React.Fragmnet>
+                     <React.Fragment>
+                     <appRegistry />
+                     </React.Fragment>
                      </div>
               );
        }
