@@ -34,10 +34,12 @@ const Ccp = () => {
             controller.onMessage(messageData => {
                 if (messageData.chatDetails.participantId === messageData.data.ParticipantId) {
                     console.log(`CDEBUG ===> Agent ${messageData.data.DisplayName} Says`,
-                        messageData.data.Content)
+                        messageData.data.Content)M
+                        console.log('MARGERBE FOOTPRINT ')
                 }
                 else {
                     console.log(`CDEBUG ===> Customer ${messageData.data.DisplayName} Says`,messageData.data.Content);
+                    console.log('MARGERBE FOOTPRINT')
                     processChatText(messageData.data.Content, messageData.data.Type, messageData.data.ContactId );
                 }
             })
