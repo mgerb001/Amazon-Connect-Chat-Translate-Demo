@@ -2,7 +2,7 @@ import Predictions, { AmazonAIPredictionsProvider } from '@aws-amplify/predictio
 
 
 async function ProcessChatText(content, sourceLang, tagretLang) {
-
+    console.log('ProcessChatText called from translate.js. Source: ',sourceLang, ' / Dest', tagretLang)
     let transcriptMessage = await Predictions.convert({
         translateText: {
             source: {
